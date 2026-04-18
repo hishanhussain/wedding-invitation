@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="f-line" />
         </div>
 
-        <p className="footer-eyebrow">Friday · 15 August 2025</p>
+        <p className="footer-eyebrow">Sunday · 09 May 2026</p>
 
         <div className="footer-names">
           <span>Muhammed Hishan</span>

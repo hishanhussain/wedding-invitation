@@ -6,7 +6,7 @@ const events = [
     title: 'Nikah Ceremony',
     arabicTitle: 'النِّكَاح',
     date: 'Sunday, 09 May 2026',
-    time: '11:30 AM',
+    time: '11:00 AM',
     venue: 'Dinesh Auditorium',
     address: 'Kannur, Kerala — 670001',
     icon: (
