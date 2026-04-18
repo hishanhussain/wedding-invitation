@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Countdown.css';
 
-const WEDDING_DATE = new Date('2026-05-09T10:00:00');
+const WEDDING_DATE = new Date('2026-05-09T11:00:00');
 
 function getTimeLeft() {
   const diff = WEDDING_DATE - Date.now();
