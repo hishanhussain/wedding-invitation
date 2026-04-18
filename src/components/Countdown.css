@@ -1,0 +1,141 @@
+.countdown-section {
+  position: relative;
+  padding: 6rem 2rem;
+  background: linear-gradient(160deg, #3b1624 0%, #5a2535 50%, #3b1624 100%);
+  overflow: hidden;
+  text-align: center;
+}
+
+.countdown-floral-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(200,151,63,0.06), transparent 55%),
+    radial-gradient(ellipse at 80% 50%, rgba(194,115,140,0.07), transparent 55%);
+  pointer-events: none;
+}
+
+.countdown-card {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 3rem;
+  background: rgba(255,253,249,0.03);
+}
+
+.countdown-card-border {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(200,151,63,0.2);
+  pointer-events: none;
+}
+.countdown-card-border::before {
+  content: '✦';
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(200,151,63,0.5);
+  font-size: 0.75rem;
+  background: #4a1f2e;
+  padding: 0 6px;
+}
+.countdown-card-border::after {
+  content: '✦';
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(200,151,63,0.5);
+  font-size: 0.75rem;
+  background: #4a1f2e;
+  padding: 0 6px;
+}
+
+.countdown-card .section-eyebrow {
+  color: rgba(232,180,194,0.65);
+  margin-bottom: 0.5rem;
+}
+
+.countdown-card .section-title {
+  color: #fff;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+.countdown-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: 220px;
+  margin: 1.2rem auto;
+  color: rgba(200,151,63,0.5);
+  font-size: 0.65rem;
+}
+.cd-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200,151,63,0.35), transparent);
+}
+
+.countdown-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.countdown-unit + .countdown-unit::before {
+  content: ':';
+  position: absolute;
+  left: -2px;
+  top: 8px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: rgba(200,151,63,0.4);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.countdown-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 9vw, 5.5rem);
+  font-weight: 300;
+  line-height: 1;
+  color: #fff;
+  background: linear-gradient(160deg, #fff 30%, rgba(200,151,63,0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.countdown-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(232,180,194,0.55);
+  margin-top: 0.4rem;
+}
+
+.countdown-date-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-style: italic;
+  color: rgba(255,240,230,0.5);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .countdown-card { padding: 3rem 1.5rem; }
+  .countdown-unit { padding: 0 1rem; }
+}

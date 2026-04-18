@@ -1,0 +1,140 @@
+.families-section {
+  position: relative;
+  padding: 6rem 2rem;
+  background: linear-gradient(160deg, #fdf0e8 0%, #fdf6ee 100%);
+  overflow: hidden;
+}
+
+.families-bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image:
+    radial-gradient(circle, #8b3a52 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.families-card {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 3.5rem;
+  background: var(--white, #FFFDF9);
+  box-shadow: 0 8px 60px rgba(139,58,82,0.07);
+}
+
+.families-card-border {
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(200,151,63,0.2);
+  pointer-events: none;
+}
+
+/* Ornaments */
+.fam-ornament {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 auto 2rem;
+  max-width: 260px;
+}
+.fam-ornament.bottom { margin: 2rem auto 0; }
+
+.fam-orn-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200,151,63,0.4), transparent);
+}
+
+/* Row layout */
+.families-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.fam-side {
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+  text-align: center;
+}
+
+.fam-role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--rose, #C2738C);
+  margin-bottom: 0.8rem;
+}
+
+.fam-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--rose-dark, #8B3A52);
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.fam-parents-block {
+  margin-bottom: 0.8rem;
+}
+
+.fam-son-of {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text, #4A3728);
+  opacity: 0.65;
+  margin-bottom: 0.3rem;
+}
+
+.fam-parent-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--dark, #2C1810);
+  line-height: 1.6;
+}
+
+.fam-location {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold, #C8973F);
+  opacity: 0.75;
+  margin-top: 0.5rem;
+}
+
+/* Center heart */
+.fam-center {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fam-center-ring {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,151,63,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(248,240,235,1), rgba(255,253,249,1));
+  box-shadow: 0 4px 24px rgba(194,115,140,0.1);
+}
+
+@media (max-width: 600px) {
+  .families-card { padding: 3rem 1.5rem; }
+  .families-row { flex-direction: column; gap: 2rem; }
+  .fam-side { max-width: 100%; }
+  .fam-center { order: -1; }
+}

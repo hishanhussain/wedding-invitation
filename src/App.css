@@ -1,0 +1,21 @@
+/* Global shared styles */
+.section-eyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--rose, #C2738C);
+  margin-bottom: 0.6rem;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 400;
+  color: var(--dark, #2C1810);
+  line-height: 1.1;
+}
+
+main {
+  width: 100%;
+}

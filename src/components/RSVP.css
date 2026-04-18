@@ -1,0 +1,158 @@
+.rsvp-section {
+  position: relative;
+  padding: 6rem 2rem;
+  background: linear-gradient(160deg, #5a2535 0%, #3b1624 100%);
+  overflow: hidden;
+}
+
+.rsvp-bg-decoration {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(200, 151, 63, 0.08), transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(194, 115, 140, 0.1), transparent 50%);
+  pointer-events: none;
+}
+
+.rsvp-container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.rsvp-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.rsvp-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(232, 213, 163, 0.7);
+  margin-top: 0.5rem;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba(255, 253, 249, 0.04);
+  border: 1px solid rgba(200, 151, 63, 0.15);
+  padding: 3rem 2.5rem;
+}
+
+.rsvp-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.rsvp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rsvp-field label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(232, 180, 194, 0.7);
+}
+
+.rsvp-field label span {
+  text-transform: none;
+  opacity: 0.6;
+  letter-spacing: normal;
+  font-size: 0.7rem;
+}
+
+.rsvp-field input,
+.rsvp-field select,
+.rsvp-field textarea {
+  background: rgba(255, 253, 249, 0.05);
+  border: 1px solid rgba(200, 151, 63, 0.2);
+  color: rgba(255, 240, 230, 0.9);
+  padding: 0.8rem 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border-color 0.3s;
+  resize: none;
+  width: 100%;
+}
+
+.rsvp-field input::placeholder,
+.rsvp-field textarea::placeholder {
+  color: rgba(255, 240, 230, 0.3);
+}
+
+.rsvp-field input:focus,
+.rsvp-field select:focus,
+.rsvp-field textarea:focus {
+  border-color: rgba(200, 151, 63, 0.5);
+}
+
+.rsvp-field select option {
+  background: #3b1624;
+  color: #fff;
+}
+
+.rsvp-btn {
+  padding: 1rem 2.5rem;
+  background: transparent;
+  border: 1px solid rgba(200, 151, 63, 0.5);
+  color: rgba(232, 213, 163, 0.9);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  align-self: center;
+  min-width: 200px;
+}
+
+.rsvp-btn:hover {
+  background: rgba(200, 151, 63, 0.15);
+  color: #fff;
+}
+
+/* Success */
+.rsvp-success {
+  text-align: center;
+  padding: 4rem 2rem;
+  border: 1px solid rgba(200, 151, 63, 0.2);
+  background: rgba(255, 253, 249, 0.04);
+}
+
+.rsvp-success-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.rsvp-success h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.rsvp-success p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(255, 240, 230, 0.7);
+  line-height: 1.7;
+}
+
+@media (max-width: 500px) {
+  .rsvp-row {
+    grid-template-columns: 1fr;
+  }
+  .rsvp-form {
+    padding: 2rem 1.5rem;
+  }
+}
